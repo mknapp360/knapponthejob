@@ -5,7 +5,7 @@ import './App.css'
 const LINKS = [
   {
     href: 'https://bookable.online',
-    label: 'Book a Session',
+    label: 'automate your business',
     sublabel: 'bookable.online',
     gradient: 'from-[#29ab00] to-[#1e8200]',
     hoverGlow: 'hover:shadow-[0_8px_32px_rgba(41,171,0,0.45)]',

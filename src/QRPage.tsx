@@ -72,7 +72,7 @@ export default function QRPage() {
           <div className="w-full space-y-2">
             {[
               { label: 'Name', value: 'Martin Knapp' },
-              { label: 'Email', value: 'martin@knapponthejob.com.com' },
+              { label: 'Email', value: 'martin@knapponthejob.com' },
               { label: 'Phone', value: '+44 7562 080026' },
               { label: 'Website', value: 'knapponthejob.com' },
             ].map(({ label, value }) => (
