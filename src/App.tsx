@@ -56,6 +56,24 @@ const PROJECTS = [
       </svg>
     ),
   },
+  {
+    href: 'https://tarotpathwork.com',
+    label: 'TarotPathwork',
+    sublabel: 'tarotpathwork.com',
+    gradient: 'from-violet-500 to-indigo-500',
+    hoverGlow: 'hover:shadow-[0_8px_32px_rgba(139,92,246,0.45)]',
+    boxShadow: '0 4px 20px rgba(99,102,241,0.25)',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5 shrink-0">
+        <circle cx="12" cy="5" r="2" />
+        <circle cx="5" cy="19" r="2" />
+        <circle cx="19" cy="19" r="2" />
+        <line x1="12" y1="7" x2="5" y2="17" />
+        <line x1="12" y1="7" x2="19" y2="17" />
+        <line x1="5" y1="19" x2="19" y2="19" />
+      </svg>
+    ),
+  },
 ]
 
 const SOCIALS = [
