@@ -62,7 +62,7 @@ const SOCIALS = [
   },
 ]
 
-const EMAIL = 'mknapp360@gmail.com'
+const EMAIL = 'martin@knapponthejob.com'
 
 // Number is assembled at runtime to avoid plain-text scraping
 const waHref = () => {
@@ -164,7 +164,7 @@ function App() {
               Martin Knapp
             </h1>
             <p className="text-white/50 text-sm font-medium tracking-wide uppercase">
-              Software · AI &amp; Machine Learning
+              Software &amp; MIS automation <br></br> AI &amp; Machine Learning
             </p>
           </div>
 
