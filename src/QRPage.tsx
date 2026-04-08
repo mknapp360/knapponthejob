@@ -2,6 +2,7 @@ import { QRCodeSVG } from 'qrcode.react'
 import { useNavigate } from 'react-router-dom'
 
 // vCard assembled at runtime — keeps contact details out of plain-text source
+// Uses \r\n line endings as required by the vCard spec (RFC 6350)
 function buildVCard() {
   const email = ['martin', '@', 'knapponthejob.com'].join('')
   const tel = ['+44', '756', '208', '0026'].join('')
@@ -9,11 +10,12 @@ function buildVCard() {
     'BEGIN:VCARD',
     'VERSION:3.0',
     'FN:Martin Knapp',
+    'N:Knapp;Martin;;;',
     `TEL;TYPE=CELL:${tel}`,
-    `EMAIL:${email}`,
+    `EMAIL;TYPE=INTERNET:${email}`,
     'URL:https://knapponthejob.com',
     'END:VCARD',
-  ].join('\n')
+  ].join('\r\n')
 }
 
 export default function QRPage() {

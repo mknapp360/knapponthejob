@@ -5,7 +5,7 @@ import './App.css'
 const LINKS = [
   {
     href: 'https://bookable.online',
-    label: 'automate your business',
+    label: 'Book a Session',
     sublabel: 'bookable.online',
     gradient: 'from-[#29ab00] to-[#1e8200]',
     hoverGlow: 'hover:shadow-[0_8px_32px_rgba(41,171,0,0.45)]',
@@ -164,7 +164,7 @@ function App() {
               Martin Knapp
             </h1>
             <p className="text-white/50 text-sm font-medium tracking-wide uppercase">
-              Software &amp; MIS automation <br></br> AI &amp; Machine Learning
+              Software · AI &amp; Machine Learning
             </p>
           </div>
 
