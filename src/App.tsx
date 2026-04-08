@@ -5,7 +5,7 @@ import './App.css'
 const LINKS = [
   {
     href: 'https://bookable.online',
-    label: 'Book a Session',
+    label: 'Automate your business',
     sublabel: 'bookable.online',
     gradient: 'from-[#29ab00] to-[#1e8200]',
     hoverGlow: 'hover:shadow-[0_8px_32px_rgba(41,171,0,0.45)]',
@@ -23,9 +23,9 @@ const LINKS = [
 
 const PROJECTS = [
   {
-    href: 'https://diningsteward.com',
+    href: 'https://diningsteward.app',
     label: 'Dining Steward',
-    sublabel: 'diningsteward.com',
+    sublabel: 'diningsteward.app',
     gradient: 'from-violet-500 to-indigo-500',
     hoverGlow: 'hover:shadow-[0_8px_32px_rgba(139,92,246,0.45)]',
     boxShadow: '0 4px 20px rgba(99,102,241,0.25)',
@@ -36,6 +36,47 @@ const PROJECTS = [
         <line x1="6" y1="1" x2="6" y2="4" />
         <line x1="10" y1="1" x2="10" y2="4" />
         <line x1="14" y1="1" x2="14" y2="4" />
+      </svg>
+    ),
+  },
+  {
+    href: 'https://fibreplanner.com',
+    label: 'FibrePlanner',
+    sublabel: 'fibreplanner.com',
+    gradient: 'from-violet-500 to-indigo-500',
+    hoverGlow: 'hover:shadow-[0_8px_32px_rgba(139,92,246,0.45)]',
+    boxShadow: '0 4px 20px rgba(99,102,241,0.25)',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5 shrink-0">
+        <circle cx="12" cy="5" r="2" />
+        <circle cx="5" cy="19" r="2" />
+        <circle cx="19" cy="19" r="2" />
+        <line x1="12" y1="7" x2="5" y2="17" />
+        <line x1="12" y1="7" x2="19" y2="17" />
+        <line x1="5" y1="19" x2="19" y2="19" />
+      </svg>
+    ),
+  },
+  {
+    href: 'https://tarotpathwork.com',
+    label: 'Tarotpathwork',
+    sublabel: 'tarotpathwork.com',
+    gradient: 'from-violet-500 to-indigo-500',
+    hoverGlow: 'hover:shadow-[0_8px_32px_rgba(139,92,246,0.45)]',
+    boxShadow: '0 4px 20px rgba(99,102,241,0.25)',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5 shrink-0">
+        {/* Left card */}
+        <rect x="2" y="6" width="11" height="15" rx="1.5"
+          transform="rotate(-15 7.5 13.5)"
+          strokeLinejoin="round" />
+        {/* Middle card */}
+        <rect x="6.5" y="4" width="11" height="15" rx="1.5"
+          strokeLinejoin="round" />
+        {/* Right card */}
+        <rect x="11" y="6" width="11" height="15" rx="1.5"
+          transform="rotate(15 16.5 13.5)"
+          strokeLinejoin="round" />
       </svg>
     ),
   },
@@ -164,7 +205,7 @@ function App() {
               Martin Knapp
             </h1>
             <p className="text-white/50 text-sm font-medium tracking-wide uppercase">
-              Software · AI &amp; Machine Learning
+              Software &amp; MIS automation <br></br> AI &amp; Machine Learning
             </p>
           </div>
 
