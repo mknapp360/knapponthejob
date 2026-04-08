@@ -1,10 +1,11 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
+import { useNavigate } from 'react-router-dom'
 import './App.css'
 
 const LINKS = [
   {
     href: 'https://bookable.online',
-    label: 'Automate your business',
+    label: 'Book a Session',
     sublabel: 'bookable.online',
     gradient: 'from-[#29ab00] to-[#1e8200]',
     hoverGlow: 'hover:shadow-[0_8px_32px_rgba(41,171,0,0.45)]',
@@ -38,42 +39,6 @@ const PROJECTS = [
       </svg>
     ),
   },
-  {
-    href: 'https://fibreplanner.com',
-    label: 'Fibreplanner',
-    sublabel: 'fibreplanner.com',
-    gradient: 'from-violet-500 to-indigo-500',
-    hoverGlow: 'hover:shadow-[0_8px_32px_rgba(139,92,246,0.45)]',
-    boxShadow: '0 4px 20px rgba(99,102,241,0.25)',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5 shrink-0">
-        <circle cx="12" cy="5" r="2" />
-        <circle cx="5" cy="19" r="2" />
-        <circle cx="19" cy="19" r="2" />
-        <line x1="12" y1="7" x2="5" y2="17" />
-        <line x1="12" y1="7" x2="19" y2="17" />
-        <line x1="5" y1="19" x2="19" y2="19" />
-      </svg>
-    ),
-  },
-  {
-    href: 'https://tarotpathwork.com',
-    label: 'TarotPathwork',
-    sublabel: 'tarotpathwork.com',
-    gradient: 'from-violet-500 to-indigo-500',
-    hoverGlow: 'hover:shadow-[0_8px_32px_rgba(139,92,246,0.45)]',
-    boxShadow: '0 4px 20px rgba(99,102,241,0.25)',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5 shrink-0">
-        <circle cx="12" cy="5" r="2" />
-        <circle cx="5" cy="19" r="2" />
-        <circle cx="19" cy="19" r="2" />
-        <line x1="12" y1="7" x2="5" y2="17" />
-        <line x1="12" y1="7" x2="19" y2="17" />
-        <line x1="5" y1="19" x2="19" y2="19" />
-      </svg>
-    ),
-  },
 ]
 
 const SOCIALS = [
@@ -87,7 +52,7 @@ const SOCIALS = [
     ),
   },
   {
-    href: 'https://linkedin.com/in/knapponthejob',
+    href: 'https://linkedin.com/in/martinknapp',
     label: 'LinkedIn',
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
@@ -97,7 +62,7 @@ const SOCIALS = [
   },
 ]
 
-const EMAIL = 'martin@knapponthejob.com'
+const EMAIL = 'mknapp360@gmail.com'
 
 // Number is assembled at runtime to avoid plain-text scraping
 const waHref = () => {
@@ -139,6 +104,16 @@ function LinkButton({ href, label, sublabel, gradient, hoverGlow, boxShadow, ico
 function App() {
   const [copied, setCopied] = useState(false)
   const [workOpen, setWorkOpen] = useState(false)
+  const navigate = useNavigate()
+  const lastTap = useRef<number>(0)
+
+  function handleNameTap() {
+    const now = Date.now()
+    if (now - lastTap.current < 350) {
+      navigate('/qr')
+    }
+    lastTap.current = now
+  }
 
   function copyEmail() {
     navigator.clipboard.writeText(EMAIL).then(() => {
@@ -181,11 +156,15 @@ function App() {
 
           {/* Name & title */}
           <div className="text-center space-y-1.5">
-            <h1 className="text-white font-semibold text-2xl tracking-tight leading-none">
+            <h1
+              className="text-white font-semibold text-2xl tracking-tight leading-none cursor-pointer select-none"
+              onClick={handleNameTap}
+              title="Double-tap to save contact"
+            >
               Martin Knapp
             </h1>
             <p className="text-white/50 text-sm font-medium tracking-wide uppercase">
-              Software &amp; MIS automation <br></br> AI &amp; Machine Learning
+              Software · AI &amp; Machine Learning
             </p>
           </div>
 
