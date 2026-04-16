@@ -40,6 +40,22 @@ const PROJECTS = [
     ),
   },
   {
+    href: 'https://pagewright.co',
+    label: 'PageWright',
+    sublabel: 'pagewright.co',
+    gradient: 'from-violet-500 to-indigo-500',
+    hoverGlow: 'hover:shadow-[0_8px_32px_rgba(139,92,246,0.45)]',
+    boxShadow: '0 4px 20px rgba(99,102,241,0.25)',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5 shrink-0">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+        <line x1="12" y1="6" x2="16" y2="6" />
+        <line x1="12" y1="10" x2="16" y2="10" />
+      </svg>
+    ),
+  },
+  {
     href: 'https://fibreplanner.com',
     label: 'FibrePlanner',
     sublabel: 'fibreplanner.com',
