@@ -109,7 +109,7 @@ const SOCIALS = [
     ),
   },
   {
-    href: 'https://linkedin.com/in/martinknapp',
+    href: 'https://linkedin.com/in/mknapp360',
     label: 'LinkedIn',
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
