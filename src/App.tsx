@@ -56,9 +56,9 @@ const PROJECTS = [
     ),
   },
   {
-    href: 'https://fibreplanner.com',
-    label: 'FibrePlanner',
-    sublabel: 'fibreplanner.com',
+    href: 'https://www.safereg.co.uk/',
+    label: 'SafeReg',
+    sublabel: 'safereg.co.uk',
     gradient: 'from-violet-500 to-indigo-500',
     hoverGlow: 'hover:shadow-[0_8px_32px_rgba(139,92,246,0.45)]',
     boxShadow: '0 4px 20px rgba(99,102,241,0.25)',
