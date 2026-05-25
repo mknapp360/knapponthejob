@@ -237,7 +237,7 @@ function App() {
               Martin Knapp
             </h1>
             <p className="text-white/50 text-sm font-medium tracking-wide uppercase">
-              Founder, Bookable &mdash; automated business infrastructure
+              Founder, Bookable <br></br> automated business infrastructure
             </p>
           </div>
 
@@ -308,12 +308,13 @@ function App() {
             {/* Collapsible project list */}
             <div
               className={`space-y-3 overflow-hidden transition-all duration-300 ease-in-out ${
-                workOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                workOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'
               }`}
             >
               {PROJECTS.map((project) => (
                 <LinkButton key={project.href} {...project} />
               ))}
+              <div className="pb-4" />
             </div>
           </div>
 
