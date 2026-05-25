@@ -23,6 +23,22 @@ const LINKS = [
 
 const PROJECTS = [
   {
+    href: 'https://bookablecrm.com',
+    label: 'BookableCRM',
+    sublabel: 'bookablecrm.com',
+    gradient: 'from-violet-500 to-indigo-500',
+    hoverGlow: 'hover:shadow-[0_8px_32px_rgba(139,92,246,0.45)]',
+    boxShadow: '0 4px 20px rgba(99,102,241,0.25)',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5 shrink-0">
+        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+        <circle cx="9" cy="7" r="4" />
+        <path d="M23 21v-2a4 4 0 00-3-3.87" />
+        <path d="M16 3.13a4 4 0 010 7.75" />
+      </svg>
+    ),
+  },
+  {
     href: 'https://diningsteward.app',
     label: 'Dining Steward',
     sublabel: 'diningsteward.app',
@@ -119,7 +135,7 @@ const SOCIALS = [
   },
 ]
 
-const EMAIL = 'martin@knapponthejob.com'
+const EMAIL = 'martin@bookable.online'
 
 // Number is assembled at runtime to avoid plain-text scraping
 const waHref = () => {
@@ -221,7 +237,7 @@ function App() {
               Martin Knapp
             </h1>
             <p className="text-white/50 text-sm font-medium tracking-wide uppercase">
-              Software &amp; MIS automation <br></br> AI &amp; Machine Learning
+              Founder, Bookable &mdash; automated business infrastructure
             </p>
           </div>
 
