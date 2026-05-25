@@ -74,9 +74,9 @@ const PROJECTS = [
     ),
   },
   {
-    href: 'https://tarotpathwork.com',
-    label: 'Tarotpathwork',
-    sublabel: 'tarotpathwork.com',
+    href: 'https://qrcard.bookable.online',
+    label: 'QR Card',
+    sublabel: 'qrcard.bookable.online',
     gradient: 'from-violet-500 to-indigo-500',
     hoverGlow: 'hover:shadow-[0_8px_32px_rgba(139,92,246,0.45)]',
     boxShadow: '0 4px 20px rgba(99,102,241,0.25)',
